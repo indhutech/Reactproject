@@ -1,0 +1,128 @@
+/* Navbar Links */
+.nav-link {
+  position: relative;
+  color: white !important;
+  margin: 0 12px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+/* Underline Hidden Initially */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 3px;
+  background-color: aqua;
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+
+/* Underline Animation on Hover */
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Text Color Change */
+.nav-link:hover {
+  color: yellow !important;
+}
+
+
+
+
+
+/* Card Animation */
+.card {
+  border: none;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Image Zoom Effect */
+.card img {
+  transition: transform 0.5s ease;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Hover Animation */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Image Zoom on Hover */
+.card:hover img {
+  transform: scale(1.1);
+}
+
+/* Card Body Animation */
+.card-body {
+  transition: background-color 0.4s ease;
+}
+
+/* Change Background on Hover */
+.card:hover .card-body {
+  background-color: #f8f9fa;
+}
+
+/* Button Animation */
+/* Button Container */
+.button-group {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Common Button Style */
+.button-group .btn {
+  padding: 10px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin: 5px;
+}
+
+/* Add to Basket Button */
+.button-group .btn-primary {
+  background-color: #45a129;
+  border: none;
+}
+
+.button-group .btn-primary:hover {
+  background-color: #0b5ed7;
+  transform: scale(1.05);
+}
+
+/* Save For Later Button */
+.button-group .btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.button-group .btn-danger:hover {
+  background-color: #436fad;
+  transform: scale(1.05);
+}
+
+/* Fade In Animation */
+.card {
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
