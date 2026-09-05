@@ -1,5 +1,5 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+//import React from "react";
+//import { useNavigate } from "react-router-dom";
 
 import b1 from "../images/11.jpeg";
 import b2 from "../images/12.jpeg";
