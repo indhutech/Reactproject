@@ -12,8 +12,8 @@ import b5 from "../images/dry1.jpeg";
 import b6 from "../images/dry2.jpeg";
 import b7 from "../images/dry3.jpeg";
 import b8 from "../images/dry4.jpeg";
-import v2 from "../images/17.jpeg";
-import v3 from "../images/wattsapp.jpeg";
+//import v2 from "../images/17.jpeg";
+//import v3 from "../images/wattsapp.jpeg";
 
 
 
