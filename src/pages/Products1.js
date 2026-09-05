@@ -11,7 +11,7 @@ import b7 from "../images/dry3.jpeg";
 import b8 from "../images/dry4.jpeg";
 
 const Products1 = () => {
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
   const products = [
     {
