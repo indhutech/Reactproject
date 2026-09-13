@@ -1,5 +1,3 @@
-//import React from "react";
-
 import b1 from "../images/11.jpeg";
 import b2 from "../images/12.jpeg";
 import b3 from "../images/13.jpeg";
@@ -10,6 +8,7 @@ import b7 from "../images/dry3.jpeg";
 import b8 from "../images/dry4.jpeg";
 
 const Products1 = () => {
+
   const products = [
     {
       img: b5,
@@ -96,7 +95,7 @@ const Products1 = () => {
   return (
     <div className="container mt-5">
 
-      <h2 className="text-center mb-5">
+      <h2 className="text-center text-success mb-5">
         🛒 MyGrocery Products
       </h2>
 
@@ -104,10 +103,9 @@ const Products1 = () => {
 
         <div key={index} className="mb-5">
 
-          {/* PRODUCT DETAILS */}
           <div className="row align-items-center">
 
-            {/* IMAGE LEFT */}
+            {/* Image */}
             <div className="col-md-6 text-center">
 
               <img
@@ -118,39 +116,30 @@ const Products1 = () => {
 
             </div>
 
-
-            {/* DETAILS RIGHT */}
+            {/* Details */}
             <div className="col-md-6">
 
-              {/* Category */}
               <span className="badge bg-primary mb-2">
                 {product.category}
               </span>
 
-              {/* Product Name */}
               <h2 className="text-success">
                 {product.name}
               </h2>
 
-              {/* Price */}
               <h4>
                 Price: {product.price}
               </h4>
 
-              {/* Offer */}
               <span className="badge bg-danger mb-3">
                 {product.offer}
               </span>
 
-              {/* Description */}
               <p className="mt-3">
                 {product.description}
               </p>
 
-              {/* Product Benefits */}
-              <h5>
-                Product Benefits
-              </h5>
+              <h5>Product Benefits</h5>
 
               <ul>
                 <li>Fresh and high quality</li>
@@ -159,18 +148,22 @@ const Products1 = () => {
                 <li>Great taste and freshness</li>
               </ul>
 
-              {/* Category Button */}
               <button
                 className="btn btn-primary me-2"
-                onClick={() =>alert(`${product.name} added to your cart!`)}
+                type="button"
+                onClick={() =>
+                  alert(`${product.name} added to your cart!`)
+                }
               >
                 🛒 {product.button}
               </button>
 
-              {/* Save Button */}
               <button
                 className="btn btn-success"
-                onClick={() => alert(`${product.name} saved!`)}
+                type="button"
+                onClick={() =>
+                  alert(`${product.name} saved!`)
+                }
               >
                 ❤️ Save For Later
               </button>

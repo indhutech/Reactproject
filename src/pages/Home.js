@@ -24,10 +24,10 @@ const Home=()=>{
     return(
         <div>
 
-            <h1 class="text-success text-center fw-bold fs-3 mt-5">
+            <h1 className="text-success text-center fw-bold fs-3 mt-5">
     🛒 Welcome to MYGROCERY 🥦
 </h1>
-<div class="container mt-4">
+<div className="container mt-4">
 
   <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
@@ -105,26 +105,26 @@ const Home=()=>{
     {[
       {
         img: b5,
-        name: "Fresh Apple",
-        price: "$92",
+        name: "Dry Almonds",
+        price: "$199",
         offer: "20% OFF"
       },
       {
         img: b6,
-        name: "Orange Juice",
-        price: "$85",
+        name: "Royal Cashew",
+        price: "$185",
         offer: "Buy 1 Get 1"
       },
       {
         img: b7,
-        name: "Chocolate Cake",
+        name: "Popular Figs",
         price: "$78",
         offer: "15% OFF"
       },
       {
         img: b8,
-        name: "Dry Fruits Pack",
-        price: "$95",
+        name: "Pumpkin Seeds",
+        price: "$175",
         offer: "Special Offer"
       }
     ].map((item, index) => (
@@ -194,25 +194,25 @@ const Home=()=>{
   {[
     {
       img: b1,
-      name: "Fresh Tomato",
+      name: "Red Label Natural care",
       price: "$100",
       offer: "10% OFF"
     },
     {
       img: b2,
-      name: "Organic Milk",
+      name: "Gold",
       price: "$85",
       offer: "Buy 1 Get 1"
     },
     {
       img: b3,
-      name: "Fresh Bread",
+      name: "3 Roses",
       price: "$59",
       offer: "15% OFF"
     },
     {
       img: b4,
-      name: "Fruit Basket",
+      name: "Kanan Devan",
       price: "$60",
       offer: "Special Offer"
     }
